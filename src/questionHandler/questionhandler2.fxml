@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="768.0" style="-fx-background-color: #fff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="questionview" alignment="TOP_LEFT" layoutX="24.0" layoutY="57.0" prefHeight="269.0" prefWidth="722.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 6;" text="The Quick Brown Fox Jumps Right Over the lazy Dog" textFill="#2a2a2a" wrapText="true" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="FontAwesome Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="7.0" text="QUESTION">
+         <font>
+            <Font name="FontAwesome Regular" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentNumber" layoutX="211.0" layoutY="7.0" prefHeight="17.0" prefWidth="89.0" text="1">
+         <font>
+            <Font name="FontAwesome Regular" size="35.0" />
+         </font>
+      </Label>
+      <VBox layoutX="24.0" layoutY="328.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="60.0" AnchorPane.leftAnchor="24.0">
+         <children>
+            <JFXRadioButton fx:id="Aradio" accessibleText="A" contentDisplay="RIGHT" layoutX="24.0" layoutY="383.0" maxHeight="400.0" maxWidth="400.0" text="A" wrapText="true" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <Label fx:id="Alabel" alignment="TOP_LEFT" depthTest="DISABLE" maxHeight="400.0" maxWidth="300.0" prefHeight="120.0" prefWidth="260.0" style="-fx-background-color: #00BCD4; -fx-background-radius: 6;" text="OPTION A" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </graphic>
+               <font>
+                  <Font name="FontAwesome Regular" size="38.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="quizAnswer" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="Bradio" accessibleText="B" contentDisplay="RIGHT" layoutX="14.0" layoutY="483.0" maxHeight="400.0" maxWidth="400.0" text="B" toggleGroup="$quizAnswer" wrapText="true" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <Label fx:id="Blabel" accessibleText="B" alignment="TOP_LEFT" depthTest="DISABLE" maxHeight="400.0" maxWidth="300.0" prefHeight="120.0" prefWidth="260.0" style="-fx-background-color: #00BCD4; -fx-background-radius: 6;" text="OPTION B" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </graphic>
+               <font>
+                  <Font name="FontAwesome Regular" size="38.0" />
+               </font>
+            </JFXRadioButton>
+         </children>
+      </VBox>
+      <VBox layoutX="345.0" layoutY="328.0" spacing="60.0" AnchorPane.rightAnchor="100.0">
+         <children>
+            <JFXRadioButton fx:id="Cradio" accessibleText="C" contentDisplay="RIGHT" layoutX="24.0" layoutY="383.0" maxHeight="400.0" maxWidth="400.0" text="C" toggleGroup="$quizAnswer" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="FontAwesome Regular" size="38.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="Clabel" alignment="TOP_LEFT" depthTest="DISABLE" maxHeight="400.0" maxWidth="300.0" prefHeight="120.0" prefWidth="260.0" style="-fx-background-color: #00BCD4; -fx-background-radius: 6;" text="OPTION C" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </graphic>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="Dradio" accessibleText="D" contentDisplay="RIGHT" layoutX="14.0" layoutY="483.0" maxHeight="400.0" maxWidth="400.0" text="D" toggleGroup="$quizAnswer" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="FontAwesome Regular" size="38.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="Dlabel" alignment="TOP_LEFT" maxHeight="400.0" prefHeight="120.0" prefWidth="260.0" style="-fx-background-color: #00BCD4; -fx-background-radius: 6;" text="OPTION D" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXRadioButton>
+         </children>
+      </VBox>
+      <JFXButton fx:id="submitButton" buttonType="RAISED" layoutX="315.0" layoutY="607.0" onAction="#submitAnswer" prefHeight="57.0" prefWidth="119.0" ripplerFill="#00bdc4" style="-fx-background-color: #fff;" text="SUBMIT" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="334.0">
+         <font>
+            <Font size="23.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="323.0" layoutY="172.0" onAction="#start" prefHeight="66.0" prefWidth="125.0" ripplerFill="BLACK" text="START" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="320.0">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="timerLabel" layoutX="648.0" layoutY="7.0" prefHeight="17.0" prefWidth="89.0">
+         <font>
+            <Font name="FontAwesome Regular" size="35.0" />
+         </font>
+      </Label>
+   </children>
+   
+</AnchorPane>

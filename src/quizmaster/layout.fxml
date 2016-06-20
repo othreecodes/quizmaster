@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.*?>
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizmaster.layoutController">
+   <children>
+      <JFXTabPane layoutX="77.0" layoutY="65.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab style="-fx-padding: 30;">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="53.0" layoutY="164.0" spacing="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                           <children>
+                              <JFXButton fx:id="createbutton" buttonType="RAISED" onAction="#createQuiz" prefHeight="115.0" prefWidth="168.0" style="-fx-background-color: #00BCD4;" text="CREATE QUIZ" textFill="WHITE">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" onAction="#startQuiz" prefHeight="115.0" prefWidth="168.0" style="-fx-background-color: #00BCD4;" text="QUICK QUIZ" textFill="WHITE">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" onAction="#normalQuiz" prefHeight="115.0" prefWidth="168.0" style="-fx-background-color: #00BCD4;" text="NORMAL QUIZ" textFill="WHITE">
+                                 <font>
+                                    <Font name="FontAwesome Regular" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="38.0" prefHeight="92.0" prefWidth="75.0" text="START HERE" textAlignment="CENTER" textFill="#00bcd4" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="FontAwesome Regular" size="80.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="40.0" />
+               </graphic>
+               
+          </Tab>
+          <Tab style="-fx-padding: 30;">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label alignment="TOP_LEFT" layoutX="76.0" layoutY="56.0" prefHeight="353.0" prefWidth="616.0" text="Running on Java 1.8.0_73. Requires at least Windows vista. Liscenced To FASSA Quiz club University of Ibadan, Oyo State. Version 1.0. (C) All rights reserved 2016" wrapText="true" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="58.0">
+                           <font>
+                              <Font name="FontAwesome Regular" size="43.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="INFO" size="40.0" />
+               </graphic>
+          </Tab>
+            <Tab style="-fx-padding: 30;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label alignment="TOP_LEFT" layoutX="70.0" layoutY="70.0" prefHeight="311.0" prefWidth="591.0" text="For more information and complaints contact the developer on Phone:08180971309. Email: daviduchenna@outlook.com" wrapText="true" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="89.0">
+                           <font>
+                              <Font name="FontAwesome Regular" size="46.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PHONE" size="40.0" />
+               </graphic>
+            </Tab>
+            <Tab disable="true" style="-fx-padding: 30;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+               <graphic>
+                  <MaterialIconView fill="WHITE" focusTraversable="true" glyphName="SETTINGS" size="40" />
+               </graphic>
+            </Tab>
+        </tabs>
+      </JFXTabPane>
+   </children>
+   <properties src="@prop.properties" />
+</AnchorPane>

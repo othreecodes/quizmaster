@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="752.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <children>
+      <JFXTextArea fx:id="questionTextArea" layoutY="79.0" maxWidth="752.0" minWidth="752.0" prefHeight="215.0" prefWidth="752.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextArea>
+      <Text layoutX="14.0" layoutY="49.71428680419922" strokeType="OUTSIDE" strokeWidth="0.0" text="QUESTION">
+         <font>
+            <Font name="FontAwesome Regular" size="30.0" />
+         </font>
+      </Text>
+      <Label fx:id="questionLabel" layoutX="167.0" layoutY="23.0" prefHeight="33.0" prefWidth="90.0" text="1">
+         <font>
+            <Font name="FontAwesome Regular" size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutX="24.0" layoutY="351.0" spacing="300.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox spacing="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox>
+                     <children>
+                        <JFXRadioButton fx:id="A">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="answerrGroup" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXTextField fx:id="ATextField" labelFloat="true" prefColumnCount="30" promptText="OPTION A">
+                           <font>
+                              <Font name="FontAwesome Regular" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <JFXRadioButton fx:id="C" toggleGroup="$answerrGroup" />
+                        <JFXTextField fx:id="CtextField" labelFloat="true" prefColumnCount="30" promptText="OPTION C">
+                           <font>
+                              <Font name="FontAwesome Regular" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox spacing="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox>
+                     <children>
+                        <JFXRadioButton fx:id="B" toggleGroup="$answerrGroup" />
+                        <JFXTextField fx:id="BTextField" labelFloat="true" prefColumnCount="30" promptText="OPTION B">
+                           <font>
+                              <Font name="FontAwesome Regular" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <JFXRadioButton fx:id="D" toggleGroup="$answerrGroup" />
+                        <JFXTextField fx:id="DTextField" labelFloat="true" prefColumnCount="30" promptText="OPTION D">
+                           <font>
+                              <Font name="FontAwesome Regular" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="19.0" layoutY="548.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" onAction="#finish" text="FINISH" textAlignment="CENTER">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <Region prefHeight="40.0" prefWidth="290.0" HBox.hgrow="ALWAYS" />
+            <JFXButton fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" onAction="#nextQuestion" text="SAVE" textAlignment="CENTER">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
