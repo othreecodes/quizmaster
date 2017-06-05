@@ -8,6 +8,8 @@ Quizmaster is a desktop Quiz Creator and presenter done with ```javafx```. With 
 <img src="Screenshot from 2017-04-19 20-04-39.png"/>
 <img src="Screenshot from 2017-04-19 20-05-40.png"/>
 
+# Android
+see the android implementation here [quizmaster-droid](https://github.com/othreecodes/quizmaster-android)
 
 # Licence
 MIT
